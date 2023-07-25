@@ -41,4 +41,5 @@ The product is under development and soon will provide:
 ## Resources
 
 - 👉 [Build your Website for free](https://www.simpllo.com/) using `Simpllo`
-- 👉 Join the [Community](https://youtu.be/mxQWwhEF21s) and chat with the team behind `Simpllo`
+<!-- - 👉 Join the [Community](https://youtu.be/mxQWwhEF21s) and chat with the team behind `Simpllo` -->
+- 👉 Join the <a class="sticky-popup" target="_blank" href="https://youtu.be/mxQWwhEF21s">Community</a> and chat with the team behind `Simpllo`

@@ -44,7 +44,7 @@ const config = {
 
     scripts: [
         {
-            src: '//cdn.jsdelivr.net/gh/app-generator/sticky-media@0.0.19/dist/index.min.js',
+            src: 'https://cdn.jsdelivr.net/gh/app-generator/sticky-media@0.0.19/dist/index.min.js',
             id: 'stickyVideoScript',
             defer: true,
             class: 'sticky-popup',
@@ -141,6 +141,7 @@ const config = {
                             {
                                 label: 'Intro (video)',
                                 href: 'https://youtu.be/mxQWwhEF21s',
+                                class: 'sticky-popup'
                             },
                             {
                                 label: 'Open Issues',
