@@ -2,6 +2,7 @@
 sidebar_position: 1
 title           : Free Site Builder
 sidebar_label   : About Simpllo
+slug            : /
 ---
 
 # About [Simpllo](https://www.simpllo.com/)
