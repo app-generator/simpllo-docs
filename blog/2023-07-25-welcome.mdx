@@ -1,0 +1,87 @@
+---
+slug: welcome
+authors: [sm0ke]
+tags: [site-builder]
+---
+
+# Welcome to Simpllo
+
+Hello! If you see this page, you might be interested you might be already using [Simpllo](https://www.simpllo.com/), 
+an `open-source Webiste Builder` that allows anyone to build websites and landing pages for free. 
+
+This service can be used without an account and the number of projects that a user can create is unlimited. 
+
+> 👉 [Simpllo Website Builder](https://github.com/app-generator/rocket-builder) - `Source Code` (saved on GitHub)
+
+[![Simpllo - open-source and Free Website Builder](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f37qufwtpy3oxvoytgoa.gif)](https://www.simpllo.com/)
+
+<br />
+
+The product was built in just a week and the story behind it might interest some of you. The current features are listed below: 
+
+- `Vanilla JS` Core, No backend
+- Remote Components pulled from a distant server
+- Global Assets: CSS, JS (injected in all pages)
+- PAGE Settings: SEO, External JS & CSS
+- Components Customization
+  - CSS, Classes
+- Grid layout
+- Multi-page Support 
+- Preview (multi-device)
+- Download (ZIP)
+- Deploy on Netlify 
+
+<br />
+
+After a few attempts of coding the builder using React, React-DND, Craft.js and other popular libraries related to this DnD concept we decided to fall back to a VanillaJS core built from scratch. Some will say that is a mistake and this might be just another project that reinvents the wheel. Well, here are the reasons for this decision: 
+
+> ✅  **#1** - We needed a codebase where we have 100% control
+
+Using an external library, if you hit a bug, might be hard to get support or find an workaround 
+
+<br />
+
+> ✅ **#2** - Export option with clean HTML 
+
+`React-DND` is able to export the pages but the HTML code looks not so nice. 
+
+<br />
+
+> ✅ **#3** - Using Distant Components 
+
+This requirement was probably the most important show stopper regarding React-DND, and Craft.js. Usually, all existing builders embed the components INSIDE and moreover, all needs to be translated to React. 
+
+In our simple builder, this case is solved by pulling the components from a distant server at runtime, making the builder decoupled from the components design.
+
+The mechanism is to query the [components server](https://components-server.onrender.com/kits/bs5/) and pull all the meta data in a single request. Components are translated by the server into `Base64` hashes and the UI knows how to decode them and build the Sidebar Dynamically: 
+
+Based on this, the Builder generates the visual components that the user is able to drag & drop. 
+
+![Simpplo, Free Website Builder - Dynamic Sidebar Components](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/m66fygtznshx07ptjhnd.png)
+
+This pattern makes the builder compatible with any components library built with Tailwind, Pico CSS, etc, and we think might be useful because simply reuse existing components. 
+
+<br />
+
+> ✅ **#4** - Embeddable in other products
+
+The builder, being decoupled from the design, can be bundled as an NPM package and later, used in any product that needs Drag & Drop capabilities. 
+
+The next version of the product will include this feature and each product that implements the API interface expected by the Builder can build visually the UI. 
+
+The features provided in the latest version are highlighted in this  video presentation published on YouTube: 
+
+> [Free Site Builder](https://youtu.be/mxQWwhEF21s) - `Video Presentation`
+
+If this open-source product got your attention, feel free to access the [official repository](https://github.com/app-generator/rocket-builder), start the product locally and contribute. 
+
+## The next Steps
+
+Improve, codebase refactoring, add more components, frameworks and invite opensource contributors for accelerated development. 
+
+<br />
+
+## Resources
+
+- 👉 [Build your Website for free](https://www.simpllo.com/) using `Simpllo`
+- 👉 Join the [Community](https://youtu.be/mxQWwhEF21s) and chat with the team behind `Simpllo`
