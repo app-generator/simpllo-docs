@@ -18,7 +18,7 @@ const config = {
     favicon: 'img/favicon.png',
 
     // Set the production url of your site here
-    url: 'https://docs.simpllo.com',
+    url: 'https://www.docs.simpllo.com',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
@@ -26,7 +26,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'app-generator', // Usually your GitHub org/user name.
-    projectName: 'docusaurus-soft-design', // Usually your repo name.
+    projectName: 'simpllo-docs', // Usually your repo name.
     trailingSlash: false, // for github pages compatibility
 
     onBrokenLinks: 'throw',
