@@ -5,6 +5,11 @@ sidebar_label   : About Simpllo
 slug            : /
 ---
 
+<!-- GOOGLE Stuff -->
+<head>
+    <meta name="google-site-verification" content="oBAlWYJIhaohrZTMhR0uXsuv9j-nx-CcHRZkBmsxJrQ" />
+</head>
+
 # About [Simpllo](https://www.simpllo.com/)
 
 Introducing **Simpllo**, a [Free Site Builder](https://www.simpllo.com/), actively supported by [AppSeed](https://appseed.us/). 
