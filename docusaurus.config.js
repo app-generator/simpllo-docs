@@ -114,7 +114,7 @@ const config = {
                         items: [
                             {
                                 label: 'Docs',
-                                to: '/intro',
+                                to: '/',
                             },
                             {
                                 label: 'Blog',
@@ -126,12 +126,12 @@ const config = {
                         title: 'Services',
                         items: [
                             {
-                                label: 'Deploy Projects',
-                                href: 'https://deploypro.dev/',
+                                label: 'Create Website',
+                                href: 'https://www.simpllo.com/',
                             },
                             {
-                                label: 'Support',
-                                href: 'https://deploypro.dev/support/',
+                                label: 'Community',
+                                href: 'https://discord.gg/AWh6TFcEwU',
                             },
                         ],
                     },
@@ -139,17 +139,17 @@ const config = {
                         title: 'Resources',
                         items: [
                             {
-                                label: 'Open Issues',
-                                href: 'https://github.com/app-generator/deploypro/issues',
+                                label: 'Intro (video)',
+                                href: 'https://youtu.be/mxQWwhEF21s',
                             },
                             {
-                                label: 'Team',
-                                href: 'https://deploypro.dev/team/',
+                                label: 'Open Issues',
+                                href: 'https://github.com/app-generator/rocket-builder/issues',
                             },
                         ],
                     },
                 ],
-                copyright: `&copy; ${new Date().getFullYear()} DeployPRO`,
+                copyright: `&copy; ${new Date().getFullYear()} Simpllo`,
             },
             prism: {
                 theme: lightCodeTheme,
