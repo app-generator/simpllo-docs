@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.0] 2023-07-25
+### Changes
+
+- [Simpllo - UI Presentation](https://www.docs.simpllo.com/free-site-builder/intro)
+- `Blog` [About Simpllo], the first article
+
 ## [0.0.2] 2023-07-16
 ### Changes
 
