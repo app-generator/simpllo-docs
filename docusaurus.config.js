@@ -44,7 +44,7 @@ const config = {
 
     scripts: [
         {
-            src: '//cdn.jsdelivr.net/gh/app-generator/sticky-media@0.0.19/dist/index.min.js',
+            src: '//cdn.jsdelivr.net/gh/app-generator/sticky-media@0.0.21/dist/index.min.js',
             id: 'stickyVideoScript',
             defer: true,
             class: 'sticky-popup',
