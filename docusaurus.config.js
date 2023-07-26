@@ -126,7 +126,7 @@ const config = {
                         title: 'Services',
                         items: [
                             {
-                                label: 'Create Website',
+                                label: 'Free Site Builder',
                                 href: 'https://www.simpllo.com/',
                             },
                             {
