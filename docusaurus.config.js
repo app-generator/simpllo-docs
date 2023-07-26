@@ -58,7 +58,7 @@ const config = {
             ({
                 docs: {
                     routeBasePath: '/',
-                    sidebarCollapsible: false,
+                    sidebarCollapsible: true,
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
@@ -144,7 +144,7 @@ const config = {
                             },
                             {
                                 label: 'Open Issues',
-                                href: 'https://github.com/app-generator/rocket-builder/issues',
+                                href: 'https://github.com/app-generator/free-site-builder/issues',
                             },
                         ],
                     },

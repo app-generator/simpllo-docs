@@ -18,7 +18,7 @@ The product aims to provide a simple way to build websites and landing pages for
 ## **Builder Features**
 
 - ✅ Free Service (No account required) 
-- ✅ Open-Source ([sources](https://github.com/app-generator/rocket-builder) published on GitHub)
+- ✅ Open-Source ([sources](https://github.com/app-generator/free-site-builder) published on GitHub)
 - ✅ Unlimited Projects & Pages 
 - ✅ Drag & Drop Elements
 - ✅ Edit components: text, style, images
@@ -26,7 +26,7 @@ The product aims to provide a simple way to build websites and landing pages for
 - ✅ Preview, Download (ZIP)
 - ✅ Deploy on Netlify
 
-![Free & Open-Source Website Builder - Actively Supported by AppSeed.](https://github.com/app-generator/rocket-builder/assets/51070104/9544f9a4-ed93-498a-a746-f6c8663be896) 
+![Free & Open-Source Website Builder - Actively Supported by AppSeed.](https://github.com/app-generator/free-site-builder/assets/51070104/9544f9a4-ed93-498a-a746-f6c8663be896) 
 
 ## Next Steps
 
