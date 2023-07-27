@@ -7,16 +7,160 @@ tags: [site-builder, drag-and-drop]
 # DnD Libraries - Curated List
 
 This article presents a curated list of free and open-source libraries that anyone can use to manage and integrate drag-and-drop events.
+<br />
+The React library is renowned for its ability to create diverse web applications, ranging from social media platforms to content management systems. With the assistance of additional libraries and frameworks, developers can further enhance the functionalities of their React apps. One popular category of libraries is Drag-and-Drop, which enables users to interact with the user interface by clicking and dragging elements to different components. An example of this functionality is rearranging items in a list by simply dragging and dropping them to desired locations.
+<br />
 
-- [React DnD](https://github.com/react-dnd/react-dnd/)
-- [React Draggable](https://github.com/react-grid-layout/react-draggable)
-- [Craft.js](https://craft.js.org/)
-- [Gridstack.js](https://gridstackjs.com/)
-- [React Dropzone](https://react-dropzone.js.org/)
+### Useful cases for drag-and-drop:
+- <b>Image Upload:</b> Allow users to drag and drop images from their desktop or file explorer directly onto designated areas of your website for easy and quick image uploads. 
+- <b>Sortable Lists:</b> Implement draggable and droppable lists where users can rearrange items by dragging them to desired positions. This feature can be helpful for to-do lists, product catalogs, or any content that requires custom ordering. 
+- <b>Responsive Layouts:</b> Enable users to customize the layout of your website by dragging and dropping elements, such as widgets or sections, to rearrange them on the page according to their preferences. 
+- <b>Interactive Maps:</b> Create interactive maps where users can drag and drop markers or locations onto the map for personalized markings or route planning. 
+- <b>File Management:</b> Develop a file management system where users can drag files from one folder to another, facilitating effortless organization and file transfers. 
+- <b>Form Building:</b> Allow users to drag and drop form fields to create customized forms, enabling flexible form creation and customization. 
+
+By incorporating Drag-and-Drop functionality into these web development cases, you can enhance the usability and interactivity of your website, providing a more intuitive and engaging experience for your users.
+
+### UI interactions will be improved with Drag and Drop libraries
+- <b>Reusability:</b> Drag and Drop libraries offer reusable components that can be easily integrated into various parts of your application. This reusability saves development time and effort, allowing developers to focus on other aspects of the UI.
+- <b>Event Handling:</b> These libraries handle essential events such as drag start, drag enter, drag leave, and drop. This ensures smooth and consistent interactions, improving the overall user experience.
+- <b>Cross-browser Compatibility:</b> Drag and Drop libraries are designed to work seamlessly across different browsers and platforms. They handle any browser-specific quirks or inconsistencies, providing a consistent experience for all users.
+- <b>Accessibility:</b> Good Drag and Drop libraries consider accessibility guidelines, making sure that the functionality is accessible to users who rely on assistive technologies like screen readers or keyboard navigation. This ensures that all users can efficiently interact with the UI.
+- <b>Customization:</b> Drag and Drop libraries often come with customizable options, allowing developers to tailor the behavior and appearance of the drag and drop elements to fit their specific UI requirements.
+- <b>Optimized Performance:</b> Drag and Drop libraries are often built with performance optimizations in mind. They are designed to handle complex UI interactions efficiently, minimizing any potential lag or stuttering during drag and drop operations.
+
+
+### Here are the best Drag and Drop React and TypeScript libraries:
+
+> ✅  **#1** - [React DnD](https://github.com/react-dnd/react-dnd/)
+
+React DnD is a powerful library that simplifies the implementation of Drag-and-Drop functionality in React applications. With pre-built components and a comprehensive API, React DnD allows developers to create intuitive and interactive user interfaces.
+<b>Installation:</b>
+
+```bash
+npm install react-dnd react-dnd-html5-backend
+```
+<b>Usage:</b>
+
+```javascript
+import { useDrag } from 'react-dnd'
+```
+
+<br />
+
+> ✅  **#2** - [React Draggable](https://github.com/react-grid-layout/react-draggable)
+
+React Draggable is a library that allows users to make elements draggable within a web application built with React.
+<b>Installation:</b>
+
+```bash
+npm install react-draggable
+```
+<b>Usage:</b>
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Draggable from 'react-draggable';
+
+class App extends React.Component {
+
+  eventLogger = (e: MouseEvent, data: Object) => {
+    console.log('Event: ', e);
+    console.log('Data: ', data);
+  };
+
+  render() {
+    return (
+      <Draggable
+        axis="x"
+        handle=".handle"
+        defaultPosition={{x: 0, y: 0}}
+        position={null}
+        grid={[25, 25]}
+        scale={1}
+        onStart={this.handleStart}
+        onDrag={this.handleDrag}
+        onStop={this.handleStop}>
+        <div>
+          <div className="handle">Drag from here</div>
+          <div>This readme is really dragging on...</div>
+        </div>
+      </Draggable>
+    );
+  }
+}
+
+ReactDOM.render(<App/>, document.body);
+```
+
+> ✅  **#3** - [Craft.js](https://craft.js.org/)
+
+Craft.js is a React-based library that provides a set of tools and components for building a visual editor interface for web applications. It allows users to create complex layouts and designs by dragging and dropping components onto a canvas, and provides an intuitive interface for editing and manipulating those components.
+<b>Installation:</b>
+
+```bash
+npm install @craftjs/core
+```
+<b>Usage:</b>
+
+```javascript
+import {useNode} from "@craftjs/core";
+
+const TextComponent = ({text}) => {
+  const { connectors: {drag} } = useNode();
+
+  return (
+    <div ref={drag}>
+      <h2>{text}</h2>
+    </div>
+  )
+}
+```
+
+> ✅  **#4** - [Gridstack.js](https://gridstackjs.com/)
+
+Gridstack.js is a JavaScript library that enables users to build responsive, draggable, and resizable grid layouts for web applications. It provides a simple and intuitive interface for creating dynamic grid-based layouts, and can be easily integrated with other front-end frameworks like React and Angular.
+<b>Installation:</b>
+
+```bash
+npm install gridstack
+```
+<b>Usage:</b>
+
+```javascript
+import 'gridstack/dist/gridstack.min.css'
+import { GridStack } from 'gridstack'
+```
+
+> ✅  **#5** - [React Dropzone](https://react-dropzone.js.org/)
+
+React Dropzone is a library that provides an easy-to-use drag-and-drop file upload functionality for React applications. It allows users to drag and drop files from their desktop or select files from a file browser, and provides a customizable UI for displaying file upload progress and handling errors.
+<b>Installation:</b>
+
+```bash
+npm install react-dropzone
+```
+<b>Usage:</b>
+
+```javascript
+import React from 'react'
+import Dropzone from 'react-dropzone'
+
+<Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+  {({getRootProps, getInputProps}) => (
+    <section>
+      <div {...getRootProps()}>
+        <input {...getInputProps()} />
+        <p>Drag 'n' drop some files here, or click to select files</p>
+      </div>
+    </section>
+  )}
+</Dropzone>
+```
 
 <!--truncate-->
 
-@Todo
 
 <br />
 
